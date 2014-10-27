@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/botonCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonCalendario"
+        android:layout_marginTop="19dp"
+             android:onClick="onClickCalendario"
+        android:text="@string/textoBotonCalendario" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NombreAlarma"
+        android:layout_alignParentLeft="true"
+        android:text="Introduzca nombre alarma" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Minutos"
+        android:layout_alignParentLeft="true"
+        android:text="Introduzca minutos" />
+
+    <Button
+        android:id="@+id/botonAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonCalendario"
+        android:onClick="onClickAlarma"
+        android:text="@string/textoBotonAlarma" />
+
+    <Button
+        android:id="@+id/botonSonido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonAlarma"
+        android:onClick="onClickSonido"
+        android:text="@string/textoBotonSonido" />
+
+    <Button
+        android:id="@+id/botonSonidoDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonSonido"
+         android:onClick="onClickSonidoDos"
+        android:text="ReproDos" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Horas"
+        android:layout_alignParentLeft="true"
+        android:text="Introduzca horas" />
+
+    <EditText
+        android:id="@+id/Minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Horas"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Horas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/NombreAlarma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/SonidoRamdom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonSonidoDos"
+        android:onClick="onClickRandom"
+        android:text="Sonido-Ramdom" />
+
+</RelativeLayout>
